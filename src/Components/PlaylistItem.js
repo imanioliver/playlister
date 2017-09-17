@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 export default class PlaylistItem extends Component {
-    constructor(props){
-        super(props)
-    }
     render(){
         return (
             <div className="card card-inverse card-warning mb-3">

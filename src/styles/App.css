@@ -26,3 +26,11 @@ nav{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.column {
+    width: 40%;
+    margin: 5%;
+}
+button{
+    margin: 10px;
+}

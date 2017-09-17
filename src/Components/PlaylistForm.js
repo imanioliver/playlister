@@ -74,29 +74,29 @@ export default class PlaylistForm extends Component {
     render (){
         return (
             <div>
-                  <form className="form w-20" onSubmit={this.addToList}>
+                  <form className="form w20" onSubmit={this.addToList}>
                     <div className="form-group row">
-                      <label htmlFor="lgFormGroupInput" className="col-sm-2 col-form-label col-form-label-lg">User Name: </label>
+                      <label htmlFor="lgFormGroupInput" className="col-sm-2 col-form-label col-form-label-sm">User Name: </label>
                       <div className="col-sm-10">
-                        <input type="text"  onChange={this.handleUserNameChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="Jason"/>
+                        <input type="text"  onChange={this.handleUserNameChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="ex. Imani"/>
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-lg">Artist/Band: </label>
+                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-sm">Artist/Band: </label>
                       <div className="col-sm-10">
-                        <input type="text"  onChange={this.handleArtistChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="Alicia Keys"/>
+                        <input type="text"  onChange={this.handleArtistChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="ex. Jill Scott"/>
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-lg">Song/Title: </label>
+                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-sm">Song/Title: </label>
                       <div className="col-sm-10">
-                        <input type="text" onChange={this.handleTitleChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="Fallin'"/>
+                        <input type="text" onChange={this.handleTitleChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="ex. A Long Walk"/>
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-lg">Notes About Song: </label>
+                      <label htmlFor="smFormGroupInput" className="col-sm-2 col-form-label col-form-label-sm">Notes About Song: </label>
                       <div className="col-sm-10">
-                        <input type="text" onChange={this.handleNoteChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="How I feel about you!"/>
+                        <input type="text" onChange={this.handleNoteChange} className="form-control form-control-lg" id="smFormGroupInput" placeholder="ex. Song for coding breaks!"/>
                       </div>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>

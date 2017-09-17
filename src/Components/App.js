@@ -13,8 +13,16 @@ class App extends Component {
 
         <div>
              <NavBar/>
-             <PlaylistForm/>
-             <Playlist/>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="column">
+                        <PlaylistForm/>
+                        </div>
+                        <div className="column">
+                        <Playlist/>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
   }
