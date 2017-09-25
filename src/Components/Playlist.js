@@ -45,7 +45,7 @@ export default class Playlist extends Component {
     render(){
         return(
             <div id="all-results">
-                <form className="form w60" onSubmit={this.fetchData}>
+                <form className="form w6" onSubmit={this.fetchData}>
                     <button type="submit" className="btn btn-primary">Update List</button>
                 </form>
                 <div>
