@@ -6,7 +6,7 @@ export default class NavBar extends Component {
             <div>
                 <nav className="navbar navbar-light">
 
-                <h1>Pick and Play!</h1>
+                <h1>Playlister!</h1>
                 </nav>
             </div>
         )
