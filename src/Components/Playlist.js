@@ -12,6 +12,7 @@ export default class Playlist extends Component {
         console.log(this.state.songs);
     }
 
+    //below is the fetch call to the playlist api. 
     fetchData = (e) => {
         e.preventDefault();
         fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting')
@@ -19,26 +20,30 @@ export default class Playlist extends Component {
           return results.json();
         })
         .then(data => {
-            let variable = data.map((aSong, index) =>{
+            let songsArray = data.map((aSong, index) =>{
                 return (<PlaylistItem key={index + 1} aSong={aSong}/>)
             })
-          this.setState({songs: variable});
+          this.setState({songs: songsArray});
         })
     };
-
+              
+              
+    //lifecycle method: this ensures that the array list is available on page load
+              //we make the same fetch call that we make on `fetchData`
     componentDidMount(){
         fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting')
         .then(results => {
             return results.json();
         })
         .then(data => {
-            let variable = data.map((aSong, index) =>{
+            let songsArray = data.map((aSong, index) =>{
                 return (<PlaylistItem key={index + 1} aSong={aSong}/>)
              })
-            this.setState({songs: variable});
-            console.log("state: ", this.state.songs);
-            console.log("props: ", this.props.songs);
-            console.log("variable: ", variable);
+            this.setState({songs: songsArray});
+                
+            console.log("state: ", this.state.songs); //this is your state of songs
+            console.log("props: ", this.props.songs); //this what you have on props
+            console.log("variable: ", songsArray); //here is your songsArray
         });
     }
 
